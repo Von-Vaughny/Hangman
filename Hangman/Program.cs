@@ -20,7 +20,7 @@ namespace Hangman
             List<string> listOf8LetterWords = new List<string> {"iarovize", "kabloona", "cabanes", "tabanid", "vacuity" };
             List<string> listOf9LetterWords = new List<string> {"dactylus", "saboraim", "ubiquity", "obduracy", "zaibatsu" }; 
             List<string> randomWordsList = new List<string>();
-            int playerWins = 0, difficulty = 0;
+            int playerWins = 0;
 
             while (true)
             {
@@ -88,7 +88,6 @@ namespace Hangman
 
                 while (counter < NUMBER_OF_GUESSES) {
 
-                    Console.WriteLine($"Random Word: {randomWord} //DELETE IN FINAL CODE\n");
                     Console.WriteLine($"Guess Number: {counter + 1}");
                     Console.Write($"Hidden Word: ");
                     foreach (string hiddenLetter in randomWordInList)
